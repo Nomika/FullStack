@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seos",
+  "info": {
+    "singularName": "seo",
+    "pluralName": "seos",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazwa": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "max": 1000
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "create_date": {
+      "type": "datetime"
+    },
+    "kurtka": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "bolean": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
