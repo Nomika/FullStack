@@ -29,13 +29,13 @@
     "create_date": {
       "type": "datetime"
     },
-    "kurtka": {
-      "allowedTypes": [
-        "images"
-      ],
+    "foto": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "bolean": {
       "type": "boolean",
